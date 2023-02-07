@@ -59,6 +59,7 @@ ro.sf.lcd_density=420
 
 # Graphics
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_transaction_tracing=false
 persist.demo.hdmirotationlock=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=true
