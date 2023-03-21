@@ -538,4 +538,6 @@
          tts, etc. dialogs. -->
     <string translatable="false" name="config_appsNotReportingCrashes">com.google.android.tts</string>
 
+    <!-- Auto-brightness sensor type string -->
+    <string name="config_displayLightSensorType">"android.sensor.light"</string>
 </resources>
