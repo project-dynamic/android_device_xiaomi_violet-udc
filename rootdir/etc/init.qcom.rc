@@ -201,6 +201,11 @@ on late-fs
     # turn off vblank irq immediately after turning off
     write /sys/module/drm/parameters/vblankoffdelay -1
 
+on post-fs-data
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 on early-boot
     # Wait for devices
     wait_for_prop vendor.all.devices.ready 1
