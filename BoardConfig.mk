@@ -31,6 +31,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 # Assert
 TARGET_OTA_ASSERT_DEVICE := violet
 
+# Audio
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
