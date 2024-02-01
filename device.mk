@@ -39,12 +39,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
-# Dynamic Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -191,10 +185,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey
-
-# Fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
 
 # Fingerprint feature
 PRODUCT_COPY_FILES += \
@@ -359,7 +349,6 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.persist \
-    fstab.qcom_ramdisk \
     fstab.qcom \
     init.insmod.sh \
     init.msm.usb.configfs.rc \
