@@ -112,7 +112,7 @@
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
 
     <!-- Whether the always on display mode is available. -->
-    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+    <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
 
     <!-- Control whether the always on display mode is enabled by default. This value will be used
          during initialization when the setting is still null. -->
@@ -226,7 +226,7 @@
         <item>"/system/framework/services.jar"</item>
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
+        <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
         <item>"/system/bin/surfaceflinger"</item>
     </string-array>
 

@@ -20,8 +20,7 @@ $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -247,14 +246,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
-
-# IFAA manager
-PRODUCT_PACKAGES += \
-    IFAAService \
-    org.ifaa.android.manager
-
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -487,6 +478,3 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor
-
-# Wallpapers
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
